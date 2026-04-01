@@ -1,1 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Broken Compass</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; color: #333; background: #fafafa; }
+h1 { color: #111; border-bottom: 2px solid #007AFF; padding-bottom: 10px; }
+h2 { color: #222; margin-top: 30px; }
+h3 { color: #444; }
+strong { color: #111; }
+table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+th, td { border: 1px solid #ddd; padding: 10px; text-align: left; font-size: 14px; }
+th { background: #f0f0f0; font-weight: 600; }
+a { color: #007AFF; }
+.important { background: #fff3cd; border: 1px solid #ffc107; padding: 12px; border-radius: 8px; margin: 16px 0; }
+ul { padding-left: 20px; }
+li { margin-bottom: 6px; }
+hr { border: none; border-top: 1px solid #ddd; margin: 30px 0; }
+</style>
+</head>
+<body>
+<h1>Privacy Policy — Broken Compass</h1>
+<p><strong>Last Updated: April 1, 2026</strong><br><strong>Effective Date: April 1, 2026</strong></p>
 
+<p>Broken Compass ("we," "our," or "the App") is a personal fitness and body recomposition application developed by Sari Koustek, based in Dubai, UAE. This Privacy Policy explains how we collect, use, store, and protect your information when you use our iOS application.</p>
+
+<div class="important"><strong>IMPORTANT:</strong> This app is not a medical device, does not provide medical advice, and is not a substitute for professional healthcare. All fitness plans, nutrition targets, supplement tracking, and AI-generated recommendations are for informational purposes only. Consult a qualified healthcare professional before making any health-related decisions.</div>
+
+<h2>1. Information We Collect</h2>
+
+<h3>1.1 Account Information</h3>
+<ul>
+<li>Email address (for sign-in via Apple or email)</li>
+<li>Phone number (if you choose phone verification)</li>
+<li>Display name (optional)</li>
+</ul>
+
+<h3>1.2 Health &amp; Fitness Data</h3>
+<ul>
+<li>Body composition metrics (weight, body fat percentage, lean mass, visceral fat, metabolic age) entered manually or via HealthKit</li>
+<li>Workout logs (exercises performed, sets, reps, weights)</li>
+<li>Nutrition data (meals logged, calorie and macro tracking)</li>
+<li>Supplement tracking (which supplements taken and when)</li>
+<li>Step count and activity data (via HealthKit)</li>
+<li>Heart rate data (via HealthKit, during workouts on Apple Watch)</li>
+</ul>
+
+<h3>1.3 Device &amp; Technical Data</h3>
+<ul>
+<li>Device identifier (for referral code validation only)</li>
+<li>Calendar events (titles and times only, to suggest training schedule — event content is not stored)</li>
+<li>Weather data (your approximate location is used to fetch weather; we do not store location data)</li>
+</ul>
+
+<h3>1.4 AI Interaction Data</h3>
+<ul>
+<li>Prompts sent to the AI assistant (meal plans, workout optimization, food/supplement photo scans)</li>
+<li>AI-generated responses are cached locally on your device for up to 24 hours for performance</li>
+</ul>
+
+<h3>1.5 Data We Do NOT Collect</h3>
+<ul>
+<li>Precise GPS location (we use a fixed coordinate for weather)</li>
+<li>Contacts, photos (camera access is used only when you initiate a scan)</li>
+<li>Browsing history</li>
+<li>Advertising identifiers</li>
+</ul>
+
+<h2>2. How We Use Your Information</h2>
+<p>We use your information solely to provide and improve the App's functionality:</p>
+<ul>
+<li><strong>Personalize your fitness plan</strong> — training schedules, calorie targets, meal plans</li>
+<li><strong>Track your progress</strong> — body composition trends, workout history, supplement compliance</li>
+<li><strong>AI-powered features</strong> — food photo analysis, supplement label scanning, plan optimization</li>
+<li><strong>Calendar integration</strong> — automatically adjust training times around your work schedule</li>
+<li><strong>Referral system</strong> — validate beta access codes (device ID used only for single-use code enforcement)</li>
+<li><strong>App performance</strong> — local telemetry to track AI usage and costs (stored on-device only)</li>
+</ul>
+
+<h2>3. Data Storage &amp; Processing</h2>
+
+<h3>3.1 On-Device Storage</h3>
+<p>The majority of your data is stored <strong>locally on your device</strong> using Apple's SwiftData and UserDefaults frameworks. This includes all health and fitness metrics, workout history, nutrition logs, supplement schedules, AI response cache, and app preferences.</p>
+
+<h3>3.2 Cloud Services</h3>
+<table>
+<tr><th>Service</th><th>Data Sent</th><th>Purpose</th></tr>
+<tr><td><strong>Firebase Authentication</strong> (Google)</td><td>Email/phone, authentication tokens</td><td>Account sign-in</td></tr>
+<tr><td><strong>Firebase Firestore</strong> (Google)</td><td>Referral code + device ID</td><td>Beta code validation</td></tr>
+<tr><td><strong>Anthropic Claude API</strong></td><td>Text prompts, food/supplement photos</td><td>AI-powered analysis and plan optimization</td></tr>
+<tr><td><strong>Apple WeatherKit</strong></td><td>Approximate coordinates</td><td>Weather-based training recommendations</td></tr>
+<tr><td><strong>Apple HealthKit</strong></td><td>Health metrics (read/write)</td><td>Sync body composition and activity data</td></tr>
+</table>
+
+<h3>3.3 Data Retention</h3>
+<ul>
+<li><strong>On-device data</strong>: Stored until you delete the app or reset data within the app</li>
+<li><strong>Firebase Auth</strong>: Account exists until you request deletion</li>
+<li><strong>Firestore referral codes</strong>: Code activation record retained for the beta period</li>
+<li><strong>AI prompts</strong>: Not stored by Anthropic beyond processing; cached locally for 24 hours</li>
+<li><strong>Supplement history</strong>: Last 90 days retained on-device</li>
+</ul>
+
+<h2>4. Data Sharing</h2>
+<p><strong>We do not sell, rent, or share your personal data with third parties for marketing or advertising purposes.</strong></p>
+<p>Your data is shared only with the service providers listed in Section 3.2, and only to the extent necessary to provide the App's features. We do not use any advertising SDKs or analytics services that track you across apps.</p>
+
+<h2>5. Your Rights</h2>
+
+<h3>5.1 Access &amp; Export</h3>
+<p>You can view all your data within the App at any time (Profile tab, Progress tab).</p>
+
+<h3>5.2 Data Deletion</h3>
+<p>You can delete your account and all associated data:</p>
+<ul>
+<li>In the App: Profile → Delete Account</li>
+<li>By contacting us at <a href="mailto:privacy@brokencompass.app">privacy@brokencompass.app</a></li>
+</ul>
+
+<h3>5.3 GDPR Rights (EU/EEA Users)</h3>
+<p>If you are located in the European Union or European Economic Area, you have the right to:</p>
+<ul>
+<li><strong>Access</strong> your personal data</li>
+<li><strong>Rectify</strong> inaccurate data</li>
+<li><strong>Erase</strong> your data ("right to be forgotten")</li>
+<li><strong>Restrict</strong> processing of your data</li>
+<li><strong>Data portability</strong> — receive your data in a structured format</li>
+<li><strong>Object</strong> to processing of your data</li>
+<li><strong>Withdraw consent</strong> at any time</li>
+</ul>
+<p>To exercise any of these rights, contact us at <a href="mailto:privacy@brokencompass.app">privacy@brokencompass.app</a>. We will respond within 30 days.</p>
+
+<p><strong>Legal Basis for Processing (GDPR):</strong></p>
+<ul>
+<li><strong>Contract performance</strong>: Processing necessary to provide the App's features</li>
+<li><strong>Consent</strong>: Health data processing (HealthKit access), camera access for scanning</li>
+<li><strong>Legitimate interest</strong>: App improvement, security, and beta code enforcement</li>
+</ul>
+
+<h3>5.4 UAE Data Protection</h3>
+<p>We comply with UAE Federal Decree-Law No. 45 of 2021 on the Protection of Personal Data.</p>
+
+<h2>6. Data Security</h2>
+<p>We implement appropriate technical measures to protect your data including HTTPS/TLS encryption for all network communication, industry-standard Firebase Authentication, Apple's HealthKit permission system, and biometric authentication (Face ID).</p>
+
+<h2>7. Children's Privacy</h2>
+<p>Broken Compass is not intended for use by children under 17. We do not knowingly collect personal information from children. If we become aware that we have collected data from a child under 17, we will delete it promptly.</p>
+
+<h2>8. Changes to This Policy</h2>
+<p>We may update this Privacy Policy from time to time. We will notify you of any material changes through the App or by email.</p>
+
+<h2>9. Contact Us</h2>
+<p>For privacy-related questions, data requests, or concerns:</p>
+<p><strong>Sari Koustek</strong><br>
+Email: <a href="mailto:privacy@brokencompass.app">privacy@brokencompass.app</a><br>
+Location: Dubai, United Arab Emirates</p>
+
+<hr>
+<p><em>This Privacy Policy is governed by the laws of the United Arab Emirates.</em></p>
+</body>
+</html>
